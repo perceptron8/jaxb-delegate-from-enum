@@ -1,0 +1,20 @@
+<xsd:schema version="1.0"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	xmlns:delegate="http://www.codesup.net/jaxb/plugins/delegate"
+	jaxb:extensionBindingPrefixes="delegate"
+	jaxb:version="2.1">
+	<xsd:complexType name="my-type">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<delegate:delegate class="org.namespace.my.myschema.Delegate" static="true">
+					<delegate:method name="hashCode" type="int" />
+				</delegate:delegate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="created-at" type="xsd:dateTime" />
+		</xsd:sequence>
+		<xsd:attribute name="name" type="xsd:string" />
+	</xsd:complexType>
+</xsd:schema>
