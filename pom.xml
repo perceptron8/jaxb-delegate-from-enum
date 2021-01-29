@@ -13,10 +13,10 @@
 			<plugin>
 				<groupId>org.apache.cxf</groupId>
 				<artifactId>cxf-xjc-plugin</artifactId>
-				<version>3.3.0</version>
+				<version>3.3.1</version>
 				<configuration>
 					<extensions>
-						<extension>net.codesup.util:jaxb-delegate-plugin:2.1.0</extension>
+						<extension>net.codesup.util:jaxb-delegate-plugin:2.3.0</extension>
 					</extensions>
 				</configuration>
 				<executions>
