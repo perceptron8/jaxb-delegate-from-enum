@@ -9,7 +9,7 @@
 	<xsd:simpleType name="color">
 		<xsd:annotation>
 			<xsd:appinfo>
-				<delegate:delegate class="org.namespace.myschema.ColorDelegate" static="true">
+				<delegate:delegate class="org.namespace.my.myschema.ColorDelegate" static="true">
 					<delegate:method name="hexCode" type="String" />
 				</delegate:delegate>
 			</xsd:appinfo>
